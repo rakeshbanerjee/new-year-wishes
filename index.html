@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing">
+
+<div class="landing-card fade-in">
+    <h1>✨ A New Beginning ✨</h1>
+    <p>
+        Every new year is a chance to reset,  
+        refocus, and move forward with hope.
+    </p>
+
+    <button id="enterBtn">Enter 2026 🎉</button>
+</div>
+
+<script>
+    document.getElementById("enterBtn").addEventListener("click", () => {
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location.href = "celebration.html";
+        }, 800);
+    });
+</script>
+
+</body>
+</html>
